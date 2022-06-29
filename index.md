@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+## FAME Metagenomics Workshop for 2022
 
-You can use the [editor on GitHub](https://github.com/beardymcjohnface/workshop2022/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Welcome to the FAME metagenomics workshop for 2022, sponsored by SAGC!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Schedule
 
-### Markdown
+#### Day 1
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+| Time |Topic | Presenter |
+|-----|-----|-----|
+| 0900-0915 | Welcome and Introductions | Rob Edwards |
+| 0900-1000 | Introduction to computing | BNP |
+| 1000-1030 | [QC/QA hands-on]() | BNP |
+| 1030-1100 | Morning coffee | |
+| 1100-1130 | Introduction to metagenomics | MD |
+| 1130-1230 | [Kraken2 hands-on]() | MD |
+| 1230-1330 | Lunch | |
+| 1330-1400 | Functional analysis | SG/MD |
+| 1400-1500 | [Super-Focus hands-on]() | SG/MD |
+| 1500-1530 | Afternoon tea | |
+| 1530-1600 | Metagenomic binning | VM |
+| 1600-1700 | [Binning hands-on]() | VM |
 
-```markdown
-Syntax highlighted code block
+#### Day 2
 
-# Header 1
-## Header 2
-### Header 3
+Time |Topic | Presenter 
+-----|-----|-----
+0900-0930 | Metagenome-assembled genome annotation | SG 
+0930-1000 | [Prokka annotating MAG hands-on]() | BNP/SG
+1000-1030 | [KEGG mapper]() | BNP
+1030-1100 | Morning coffee |
+1100-1200 | AMR and WW | EDo
+1200-1230 | [AMR finding]() | MR
+1230-1330 | Lunch | 
+1330-1400 | Data visualization in R and Python | MR
+1400-1500 | [Hands-on data viz part 1]() | MR
+1500-1530 | Afternoon tea | 
+1530-1645 | [Hands-on data viz part 2]() | MR
+1645-1700 | Wrap up and summary | RE
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/beardymcjohnface/workshop2022/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
