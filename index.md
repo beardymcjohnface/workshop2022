@@ -21,7 +21,7 @@ Click 'Home' to return here.
 | 1400-1500 | [Super-Focus hands-on]() | Susie Grigson/Michael Doane |
 | 1500-1530 | Afternoon tea | |
 | 1530-1600 | Metagenomic binning | Vijini Mallawaarachchi |
-| 1600-1700 | [Binning hands-on]() | Vijini Mallawaarachchi |
+| 1600-1700 | [Binning hands-on](/pages/metagenomic-binning.md) | Vijini Mallawaarachchi |
 
 #### 05/07/2022
 
