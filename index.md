@@ -33,7 +33,7 @@ Time |Topic | Presenter
 1200-1230 | [AMR finding]() | MR
 1230-1330 | Lunch | 
 1330-1400 | Data visualization in R and Python | MR
-1400-1500 | [Hands-on data viz part 1]() | MR
+1400-1500 | [Hands-on data viz part 1](/pages/data-viz-part-1.md) | MR
 1500-1530 | Afternoon tea | 
 1530-1645 | [Hands-on data viz part 2]() | MR
 1645-1700 | Wrap up and summary | RE
