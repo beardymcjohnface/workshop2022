@@ -51,6 +51,7 @@ Add sample names
     SRR1237783
 
 Save the file Ctrl+O
+
 Exit file Ctr;l+
 
 
