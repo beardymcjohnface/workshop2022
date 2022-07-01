@@ -18,7 +18,8 @@ Click 'Home' to return here.
 | 1130-1230 | [Kraken2 hands-on]() | Michael Doane |
 | 1230-1330 | Lunch | |
 | 1330-1400 | Functional analysis | Susie Grigson/Michael Doane |
-| 1400-1500 | [Super-Focus hands-on]() | Susie Grigson/Michael Doane |
+| 1400-1430 | [Super-Focus hands-on]() | Susie Grigson/Michael Doane |
+| 1430-1500 | Sequence Assembly and Evaluation with QUAST | Vijini Mallawaarachchi/Bhavya Papudeshi |
 | 1500-1530 | Afternoon tea | |
 | 1530-1600 | Metagenomic binning | Vijini Mallawaarachchi |
 | 1600-1700 | [Binning hands-on](/pages/metagenomic-binning.md) | Vijini Mallawaarachchi |
