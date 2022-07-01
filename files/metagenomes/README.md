@@ -1,0 +1,1 @@
+Assemblies and metagenomic binning data for the workshop are saved in https://cloudstor.aarnet.edu.au/plus/s/2oFEKQv68UZoFS9
