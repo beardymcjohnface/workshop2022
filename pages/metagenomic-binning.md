@@ -4,7 +4,7 @@ layout: default
 
 # Metagenomic Binning
 
-Binning metagenomes...
+Metagenomic binning is the process of separating sequences into bins representing different taxonomic groups. These bins are generally known as *metagenome assembled genomes*. The most popular tools bin contigs as they are longer than reads and contain more information that can characterise the underlying organisms in the metagenomic sample.
 
 ## Before binning...
 
@@ -16,7 +16,7 @@ One of the most popular programs for binning metagenomes is [MetaBAT](https://bi
 
 MetaBAT does the profiling based on tetranucleotide frequencies in the samples. It counts the 4-mers, (i.e. `AAAA`, `AAAT`, `AAAG`, `AAAC`, `AATA`, `AATT`, …) in the sequences and uses those to suggest which samples should go together. The advantage of MetaBAT is that it will return your contigs for you.
 
-MetaBAT requires one BAM file for every input sample, and one set of contigs. We need to map the individual reads to the contigs in separate files.
+MetaBAT also uses coverage information of the contigs which is calculated from BAM files for every input sample. We need to map the individual reads to the contigs in separate files.
 
 You can use the following command to create BAM files for each input sample:
 
