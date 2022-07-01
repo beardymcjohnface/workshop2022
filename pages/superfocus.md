@@ -40,20 +40,24 @@ We can download any of these file using WinSCP and open them with Excel to look 
 
 In our example, the first four columns correspond to the normalised read counts of each sample, and the second four columns contain the percent abundance of each function. 
 
-(Note that the read counts in the superfocus output have been normalised. if you would prefer to have the raw read counts in the output, make sure to run SUPER-FOCUS with the flag `-n 0`) 
+(Note that the read counts in the superfocus output have been normalised and this is why read counts have decimal values. if you would prefer to have the raw, un-normalised read counts in the output, make sure to run SUPER-FOCUS with the flag `-n 0`) 
 
 ## Visualising SUPER-FOCUS with Krona 
      
-We can build a Krona plot on our SUPER-FOCUS output just like we did for our Kraken output earlier in the day. We encounter the same problem as before that our output is in a format which Krona doesn't like. We can use a slightly different command to convert our superfocus output to a format which Krona likes. 
+We can build a Krona plot on our SUPER-FOCUS output just like we did for our Kraken output earlier today.
+
+The *slightly* annoying part of building a Krona plot on our SUPER-FOCUS output is that we need to rearrange it into a format which Krona can understand. The good news is that we can rearrange it using this bash command. 
+
 ```
 tail -n +5 output_all_levels_and_function.xls | awk -F '\t' '{n=$4+$5+$6+$7; print n"\t"$1"\t"$2"\t"$3}' > superfocus_out_krona.tsv
 ``` 
+
 This creates a file, `superfocus_out_krona.tsv` which can be read by Krona.
 
 Next we can generate our krona plot by running the command
 ```
 ktImportText superfocus_out_krona.tsv -o superfocusKronaPlot.html
 ```
-Next download the Krona html file to your desktop using WinSCP. You can open this html  browser to reveal a plot of the distribution of functions in the samples. You can zoom in and zoom out to see the different levels of annotations. 
+Next download the Krona html file to your desktop using WinSCP. You can open this html file in your favourite browser to reveal a plot of the distribution of functions in the samples. You can zoom in and zoom out to see the different levels of annotations. 
 
 Congratulations on making it to the end of the tutorial! I hope you enjoyed it 
