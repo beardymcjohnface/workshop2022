@@ -20,6 +20,8 @@ Log in to the server
         ssh user@115.146.84.253
     
   - Use putty or Mobaterm to login instead
+    - Download putty, https://www.putty.org
+    - Download Mobaxterm, https://mobaxterm.mobatek.net/download.html
   
 Once logged in, type the command 
 
