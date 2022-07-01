@@ -55,4 +55,4 @@ Save the file Ctrl+O
 Exit file Ctr;l+
 
 
-### Yay \0/, all done with this tutorial!
+### Yay, all done with this tutorial!
