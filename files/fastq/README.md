@@ -36,5 +36,22 @@ Type in the below command
   
 The decompressed folder will be labelled "subsample". 
 
+## Let's learn how to use a text editor nano 
+Save a file called filename.txt with the 4 sample names 
 
-Yay \0/, all done with this tutorial !
+Commands to do this, 
+
+    nano filename.txt
+    
+Add sample names 
+
+    SRR1237780
+    SRR1237781
+    SRR1237782
+    SRR1237783
+
+Save the file Ctrl+O
+Exit file Ctr;l+
+
+
+### Yay \0/, all done with this tutorial!
