@@ -33,7 +33,7 @@ This should list the folder "subsample.tar"
 ## Decompress the file
 Type in the below command 
 
-    tar -xvzf subsample.tar
+    tar -xvf subsample.tar
     ls
   
 The decompressed folder will be labelled "subsample". 
