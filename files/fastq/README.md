@@ -50,9 +50,9 @@ Add sample names
     SRR1237782
     SRR1237783
 
-Save the file Ctrl+O
+Save file -- Ctrl+O
 
-Exit file Ctr;l+
+Exit file -- Ctrl+X
 
 
 ### Yay, all done with this tutorial!
