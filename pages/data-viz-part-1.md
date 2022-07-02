@@ -139,6 +139,8 @@ or in PyCharm you can right click and view as dataframe for the _df_ and _meta_ 
 ```python
 import pandas as pd
 import seaborn as sns
+import re
+import numpy as np
 
 df = pd.read_csv('output_all_levels_and_function.tsv.gz',
                  compression='gzip',
@@ -154,11 +156,60 @@ meta.head()
 To drop the counts and keep the percentage columns:
 
 ```python
-df_perc = df.iloc[:,0:3 + 8:11]
+df_perc = df.iloc[0,1,2,3,8,9,10,11]
+
+# you can make this look neater with numpy
+df_perc = df.iloc[np.r_[0:3,8:11]]
 ```
 
-convert to long format:
+convert to long format; you have to specify columns by name, 
+so using df_perc.columns[0:4].to_list() is easier than typing it out.
 
-```r
-df_long = gather(df_perc, "SampleName", "PercentReads", 5:8)
+```python
+df_long = df_perc.melt(
+    id_vars=df_perc.columns[0:4].to_list(),
+    value_vars=df_perc.columns[4:8].to_list(), 
+    var_name='SampleID', 
+    value_name="PercentReads")
 ```
+
+Clean the sample IDs:
+
+```python
+df_long['SampleID'] = [re.sub('good_out_R1/|_good_out.*', '', i) for i in df_long['SampleID']]
+```
+
+merge in the metadata:
+
+```python
+# because they both have columns named "SampleID" we can just do this
+df_meta = pd.merge(df_long, meta)
+
+# if the column names are different you need to specify them
+df_meta = pd.merge(df_long, meta, left_on='SampleID', right_on='SampleID')
+```
+
+collect some summaries:
+
+```python
+top_group_perc = df_meta.groupby(by=["Subsystem Level 3", "Group"], as_index=False).agg('mean').query('PercentReads > 0.05').sort_values('PercentReads')
+
+# same as above but easier to read
+top_group_perc = df_meta.groupby(by=["Subsystem Level 3", "Group"], as_index=False) \
+                        .agg('mean') \
+                        .query('PercentReads > 0.05') \
+                        .sort_values('PercentReads')
+
+# you can also filter like so
+top_group_perc = top_group_perc[top_group_perc['PercentReads']>0.05]
+```
+
+Make a nice figure:
+
+```python
+sns.barplot(data=top_group_perc, 
+            y='Subsystem Level 3', 
+            x='PercentReads', 
+            hue='Group')
+```
+
