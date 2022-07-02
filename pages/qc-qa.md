@@ -104,3 +104,5 @@ Output from prinseq would contain,
         SRR1237780_single_out_R2.fastq  SRR1237782_bad_out_R2.fastq     SRR1237783_good_out_R2.fastq
         SRR1237781_bad_out_R1.fastq     SRR1237782_good_out_R1.fastq    SRR1237783_single_out_R1.fastq
         SRR1237781_bad_out_R2.fastq     SRR1237782_good_out_R2.fastq    SRR1237783_single_out_R2.fastq
+        
+ Yay!! All done with this tuorial too
