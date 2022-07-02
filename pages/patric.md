@@ -3,7 +3,7 @@
 Once the MAGs are generated, here are some downstream analysis that you can perform
 
 ## Step 1: Download the MAGs generated to laptop
-Goto - https://cloudstor.aarnet.edu.au/plus/s/2FJKmMoF8bOoGZd
+Goto - https://cloudstor.aarnet.edu.au/plus/s/2FJKmMoF8bOoGZd \
 Select "bin_14_seqs.fasta" and download 
 
 ## Step 2: Upload files to PATRIC
