@@ -4,7 +4,7 @@ Once the MAGs are generated, here are some downstream analysis that you can perf
 
 ## Step 1: Download the MAGs generated to laptop
 Goto - https://cloudstor.aarnet.edu.au/plus/s/2FJKmMoF8bOoGZd \
-Select "bin_14_seqs.fasta" and download 
+Select "bin_20_seqs.fasta" and download 
 
 ## Step 2: Upload files to PATRIC
 PATRIC is web service available for microbial genome annotations, https://patricbrc.org
@@ -31,11 +31,11 @@ PATRIC is web service available for microbial genome annotations, https://patric
 - This should opena new tab. Next to contigs, clik on the "folder icon"
 - This will open a new pop up window that allows you to navigate through your worksapce
   - find the metagenomics-workshop 2022 folder
-  - select "bin_14_seqs.fasta" and click on "OK" 
+  - select "bin_20_seqs.fasta" and click on "OK" 
 - This will take you back to the Annotation window, fil the form with the below inforamtion
   - Domain: bacteria
   - Taxonomy ID 2
-  - My label : Workshop
+  - My label : Workshop bin20
   - Output folder: metagenomics-workshop 20022
   - Click on Annotate
 
