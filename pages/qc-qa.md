@@ -24,14 +24,14 @@ This should list the 8 metagenomes in the folder
 
 Decompress the files by running the command 
 
-`gzip -d SRR1237780_1.fastq.gz`
-`gzip -d SRR1237780_2.fastq.gz`
-`gzip -d SRR1237781_1.fastq.gz`
-`gzip -d SRR1237781_2.fastq.gz`
-`gzip -d SRR1237782_1.fastq.gz`
-`gzip -d SRR1237782_2.fastq.gz`
-`gzip -d SRR1237783_1.fastq.gz`
-`gzip -d SRR1237783_2.fastq.gz`
+    gzip -d SRR1237780_1.fastq.gz
+    gzip -d SRR1237780_2.fastq.gz
+    gzip -d SRR1237781_1.fastq.gz
+    gzip -d SRR1237781_2.fastq.gz
+    gzip -d SRR1237782_1.fastq.gz
+    gzip -d SRR1237782_2.fastq.gz
+    gzip -d SRR1237783_1.fastq.gz
+    gzip -d SRR1237783_2.fastq.gz
 
 If the files are decompressed they should no longer have the .gz extension
 
