@@ -12,8 +12,8 @@ kraken2 --threads 4 --memory-mapping --db /data/kraken2/ --report SRR1237782_kra
 ```
 
 In this command: 
-- `kraken_report.txt` is the name of the output file which contains the number of reads mapped to each taxon. 
-- `kraken_output.txt` refers to the #TODO 
+- `SRR1237782_kraken_report.txt` is the name of the output file which contains the abundance of each taxon. 
+- `SRR1237782_kraken_output.txt` is the name of the output file which lists what taxon each read was mapped to. 
 
 The `--memory-mapping` flag is important to ensure that the entire database isn't loaded into RAM and the `--use-names` flag is also important to make sure that our output contains the scientific name of each species rather than their taxonomy IDs. We don't need to include the `-report-zero-counts` flag, this just adds rows to our output for species which aren't present. Sometimes scripts used to analyse kraken output require this rows to be included. 
 
