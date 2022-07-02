@@ -43,7 +43,7 @@ Run the below commands,
 
     cd
     mkdir fastqc
-    fastqc subsample/SRR1237780_1.fastq -o fastqc/`
+    fastqc subsample/SRR1237780_1.fastq -o fastqc/
  
 The FastQC report for this file is saved to the directory fastqc. Check this diretcory after the command is run
 
