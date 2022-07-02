@@ -2,13 +2,13 @@
 Kraken is a tool which provides DNA sequences with taxonomic labels by examining the k-mers within a query sequence. In this tutorial we will use Kraken to determine the lowest common ancestor (LCA) for each sequence.
 
 ## Getting started 
-To run kraken, we require a database which allow us to determine the taxonomy of our sequences based on our k-mers. A kraken2 database has already been downloaded for us and is located at `/data/kraken` 
+To run kraken, we require a database which allow us to determine the taxonomy of our sequences based on k-mers. A kraken2 database has already been downloaded for us and is located at `/data/kraken` 
 
 ## Running Kraken 
 Kraken has already been installed for us. We can run kraken on our sequences by running the command 
 
 ```
-kraken2 --threads 4 --memory-mapping --db /data/kraken2/ --report kraken_report.txt --use-names --quick --output kraken_output.txt good_out_R1/*  
+kraken2 --threads 4 --memory-mapping --db /data/kraken2/ --report kraken_report.txt --use-names utput kraken_output.txt good_out_R1/*  
 ```
 
 In this command: 
@@ -19,7 +19,11 @@ the `--memory-mapping` flag is important to ensure that the entire database isn'
 
 ## Visualising with Krona 
 
-Krona can be used to generate pretty figures which tell us about the composition of our sample. Krona has already been installed for us as well.
+Krona can be used to generate pretty figures which tell us about the composition of our sample. 
+
+#TODO convert kraken output to something which Krona can read 
+
+Krona has already been installed for us as well.
 
 ```
 ktImportTaxonomy -q 2 -t 3 Sample1.txt Sample2.txt -o krona.html
