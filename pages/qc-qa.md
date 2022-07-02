@@ -64,6 +64,43 @@ To visualize the output, copy the file to your laptop.
 
 Once copied to laptop, click on the file and it should open in a browser
 
+**Repeat the same steps for reverse read, SRR1237780_2**
+Commands to run 
+
+    fastqc subsample/SRR1237780_2.fastq -o fastqc/
+    
+Now there should be 4 files in fastqc
+
+    (base) nala0006@workshoppy:~$ ls fastqc/
+    SRR1237780_1_fastqc.html  SRR1237780_1_fastqc.zip  SRR1237780_2_fastqc.html  SRR1237780_2_fastqc.zip
+   
+Download SRR1237780_2_fastqc.html, and open in browser
+
 ## Prinseq 
+Prinseq++ can be used to trim, filter and reformat sequences.
 
+    cd 
+    mkdir prinseq 
+    
+    prinseq++ -min_len 60 -min_qual_mean 25 -ns_max_n 0 -derep 1  -out_format 0 -trim_tail_left 5 -trim_tail_right 5  -trim_qual_type min -trim_qual_left 30 -trim_qual_right 30 -trim_qual_window 10-threads 2 -out_name prinseq/SRR1237780 -fastq subsample/SRR1237780_1.fastq -fastq2 subsample/SRR1237780_2.fastq 
 
+    prinseq++ -min_len 60 -min_qual_mean 25 -ns_max_n 0 -derep 1  -out_format 0 -trim_tail_left 5 -trim_tail_right 5  -trim_qual_type min -trim_qual_left 30 -trim_qual_right 30 -trim_qual_window 10-threads 2 -out_name prinseq/SRR1237781 -fastq subsample/SRR1237781_1.fastq -fastq2 subsample/SRR1237781_2.fastq 
+
+    prinseq++ -min_len 60 -min_qual_mean 25 -ns_max_n 0 -derep 1  -out_format 0 -trim_tail_left 5 -trim_tail_right 5  -trim_qual_type min -trim_qual_left 30 -trim_qual_right 30 -trim_qual_window 10-threads 2 -out_name prinseq/SRR1237782 -fastq subsample/SRR1237782_1.fastq -fastq2 subsample/SRR1237782_2.fastq 
+
+    prinseq++ -min_len 60 -min_qual_mean 25 -ns_max_n 0 -derep 1  -out_format 0 -trim_tail_left 5 -trim_tail_right 5  -trim_qual_type min -trim_qual_left 30 -trim_qual_right 30 -trim_qual_window 10-threads 2 -out_name prinseq/SRR1237783 -fastq subsample/SRR1237783_1.fastq -fastq2 subsample/SRR1237783_2.fastq 
+
+Output from prinseq would contain, 
+  - good_out: filtered sequences for forward and reverse reads
+  - bad_out: removed sequences for forward and reverse reads
+  - single_out: singletons for forward and reverse reads
+
+        (base) nala0006@workshoppy:~$ ls prinseq/
+        SRR1237780_bad_out_R1.fastq     SRR1237781_good_out_R1.fastq    SRR1237782_single_out_R1.fastq
+        SRR1237780_bad_out_R2.fastq     SRR1237781_good_out_R2.fastq    SRR1237782_single_out_R2.fastq
+        SRR1237780_good_out_R1.fastq    SRR1237781_single_out_R1.fastq  SRR1237783_bad_out_R1.fastq
+        SRR1237780_good_out_R2.fastq    SRR1237781_single_out_R2.fastq  SRR1237783_bad_out_R2.fastq
+        SRR1237780_single_out_R1.fastq  SRR1237782_bad_out_R1.fastq     SRR1237783_good_out_R1.fastq
+        SRR1237780_single_out_R2.fastq  SRR1237782_bad_out_R2.fastq     SRR1237783_good_out_R2.fastq
+        SRR1237781_bad_out_R1.fastq     SRR1237782_good_out_R1.fastq    SRR1237783_single_out_R1.fastq
+        SRR1237781_bad_out_R2.fastq     SRR1237782_good_out_R2.fastq    SRR1237783_single_out_R2.fastq
