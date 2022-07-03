@@ -141,4 +141,102 @@ ggplot(FamSums, aes(x=SampleID,y=Family,fill=Phylum,size=n)) +
 
 ![](/workshop2022/files/kraken/bubblePlot.png)
 
-# todo: PCA
+# PCAs for dimension reduction (Rstudio)
+
+For this example we'll be using the Hecatomb tutorial output.
+Download [bigtable.tsv.gz](/workshop2022/files/hecatomb/bigtable.tsv.gz)
+and [metadata.tsv.gz](/workshop2022/files/hecatomb/metadata.tsv.gz).
+Load the bigtable into a dataframe in R:
+
+```r
+library(tidyr)
+library(dplyr)
+install.packages('ggfortify')
+library(ggfortify)
+
+data = read.csv('bigtable.tsv.gz',header=T,sep='\t')
+View(data)
+```
+
+This file is very similar to the Kraken.taxon.tsv file, 
+only it has a ton of alignment metrics that are useful for filtering false positives.
+Let's quickly filter our Hecatomb hits to only consider the Viral compositions with high quality alignments.
+
+```r
+VirusesFiltered = data %>% filter(kingdom=='Viruses' & evalue < 1e-10)
+```
+
+We can profile how similar or dissimilar our samples are by their viral compositions.
+We'll first collect the normalised counts of all genera for each sample, then convert it to a data matrix.
+
+```r
+# create the counts
+viralGeneraCounts = VirusesFiltered %>% 
+  group_by(sampleID, genus) %>% 
+  summarise(n = sum(normCount))
+
+# wide format
+ViralGeneraWide = viralGeneraCounts %>% 
+  spread(genus, n, fill=0)
+
+View(ViralGeneraWide)
+```
+
+Calculate a PCA!
+
+```r
+# scaled and centred - skip the first column which is our sample names
+pca = prcomp(ViralGeneraWide[2:149], scale=T, center=T)
+```
+
+Let's look at the summary:
+
+```r
+summary(pca)
+```
+
+```text
+Importance of components:
+                          PC1    PC2    PC3    PC4    PC5     PC6     PC7    PC8     PC9
+Standard deviation     5.0270 4.7307 4.2255 4.2056 3.9012 3.70916 3.63554 3.3845 3.34037
+Proportion of Variance 0.1708 0.1512 0.1206 0.1195 0.1028 0.09296 0.08931 0.0774 0.07539
+Cumulative Proportion  0.1708 0.3220 0.4426 0.5621 0.6649 0.75790 0.84721 0.9246 1.00000
+                            PC10
+Standard deviation     2.108e-15
+Proportion of Variance 0.000e+00
+Cumulative Proportion  1.000e+00
+```
+
+The top two principle components explain 32 % of the variance. 
+Not too shabby.
+We can visualise the contributions of each PC.
+
+```r
+plot(pca, type='l')
+```
+Ideally this plot should have an elbow shape.
+There are many packages for plotting PCAs themselves, I'll use ggfortify:
+
+```r
+autoplot(pca)
+```
+
+This doesn't tell us much, we need some METADATA!
+
+```r
+meta = read.csv('metadata.tsv.gz', header=T,sep='\t')
+ViralGeneraMeta = merge(ViralGeneraWide, meta, by = 'sampleID')
+```
+
+Remake the plot colouring with the different metadata groups that we have.
+
+```r
+autoplot(pca, data = ViralGeneraMeta, colour = 'MacGuffinGroup') + theme_bw()
+autoplot(pca, data = ViralGeneraMeta, colour = 'vaccine') + theme_bw()
+autoplot(pca, data = ViralGeneraMeta, colour = 'sex') + theme_bw()
+```
+
+This looks a bit more interesting.
+
+![](/workshop2022/files/hecatomb/pca.png)
+
