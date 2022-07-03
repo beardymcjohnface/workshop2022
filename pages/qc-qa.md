@@ -12,11 +12,11 @@ Login
 - Using putty/mobaxterm 
 - Command line using 
 	
-	`ssh username@115.146.84.253`
+	ssh username@115.146.84.253
 
 List all the files, using command 
 	
-	`ls`
+	ls
   
 There should hopefully be a folder labelled "subsample"
 
