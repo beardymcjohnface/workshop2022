@@ -21,8 +21,6 @@ The `--memory-mapping` flag is important to ensure that the entire database isn'
 
 Krona can be used to generate pretty figures which tell us about the composition of our sample. 
 
-#TODO get rob to install taxonomy for krona 
-
 We can create a Krona plot for the Kraken output of one of our samples by running the command 
 
 ```
