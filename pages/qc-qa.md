@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # QC/QA Hands on tutorial
 
 ## Data 
