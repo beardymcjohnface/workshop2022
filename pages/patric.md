@@ -15,7 +15,7 @@ PATRIC is web service available for microbial genome annotations, https://patric
 
 - First register for an account, if you dont already have one. Requires your name, and email. Should be quick
   
-  ![](workshop2022/images/register PATRIC.png)
+  ![](/workshop2022/images/register PATRIC.png)
 
 - Once you have an account set up, login with your credentials
 - Click on "Workspaces" on the top bar
