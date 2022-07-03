@@ -36,7 +36,7 @@ You'll notice that there is separate table for each taxonomic level.
 To look at the output for the genus level, run the command
 
 ```
-less output_Genus_tabular.xls
+column -t -s $'\t' -n string output_Genus_tabular.xls | less
 ```
 
 You will notice that this file contains four hierarchical levels, one for each sample. The values in the table correspond to the relative abundance of each taxa. 
