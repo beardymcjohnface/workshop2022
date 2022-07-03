@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /metagenomic-binning
 ---
 
 # Metagenomic Binning
