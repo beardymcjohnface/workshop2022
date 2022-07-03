@@ -108,7 +108,7 @@ Once we have our bins from MetaBAT2, we can use GraphBin to refine the MetaBAT2 
 
 ### Preparing the binning result
 
-We have to format our binning result so that GraphBin can read the binning result. We have provided a script named [prep_result.py](https://github.com/beardymcjohnface/workshop2022/blob/gh-pages/scripts/prep_result.py) which you can download.
+We have to format our binning result so that GraphBin can read the binning result. We have provided a script named [prep_result.py](/scripts/prep_result.py) which you can download.
 
 ```
 python prep_result.py --binned metabat_bins --output ./

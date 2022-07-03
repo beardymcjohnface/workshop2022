@@ -13,7 +13,7 @@ Files to download:
 You can do these steps yourself if you like, 
 but we'll be skipping to the next step in the interest of time.
 
-[File preparation steps](/pages/data-viz-2-prep.html)
+[File preparation steps](/pages/data-viz-2-prep.md)
 
 # Relative abundance comparisons (Rstudio)
 
@@ -89,7 +89,7 @@ ggplot(phylumOtherCounts, aes(x=SampleID, y=n, fill=Phylum)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
 
-![](/workshop2022/files/kraken/stackedBarPlot.png)
+![](/files/kraken/stackedBarPlot.png)
 
 A much better version of this is a bubble plot.
 Bubble plots are not only clearer, but allow an extra dimension of information as well.
@@ -138,6 +138,6 @@ ggplot(FamSums, aes(x=SampleID,y=Family,fill=Phylum,size=n)) +
   scale_size(range=c(0,10))
 ```
 
-![](/workshop2022/files/kraken/bubblePlot.png)
+![](/files/kraken/bubblePlot.png)
 
 # todo: PCA
