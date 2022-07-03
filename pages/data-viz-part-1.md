@@ -159,7 +159,7 @@ To drop the counts and keep the percentage columns:
 df_perc = df.iloc[0,1,2,3,8,9,10,11]
 
 # you can make this look neater with numpy
-df_perc = df.iloc[np.r_[0:3,8:11]]
+df_perc = df.iloc[np.r_[0:4,8:12]]
 ```
 
 convert to long format; you have to specify columns by name, 

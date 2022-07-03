@@ -38,6 +38,6 @@ Time |Topic | Presenter
 1330-1400 | Data visualization in R and Python | Michael Roach
 1400-1500 | [Hands-on data viz part 1](/pages/data-viz-part-1.md) | Michael Roach
 1500-1530 | Afternoon tea | 
-1530-1645 | [Hands-on data viz part 2]() | Michael Roach
+1530-1645 | [Hands-on data viz part 2](/pages/data-viz-part-2.md) | Michael Roach
 1645-1700 | Wrap up and summary | Rob Edwards
 
