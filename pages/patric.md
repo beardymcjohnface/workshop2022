@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Metagenome assembled genomes (MAG) Analysis
 
 Once the MAGs are generated, here are some downstream analysis that you can perform
@@ -10,7 +14,9 @@ Select "bin_20_seqs.fasta" and download
 PATRIC is web service available for microbial genome annotations, https://patricbrc.org
 
 - First register for an account, if you dont already have one. Requires your name, and email. Should be quick
-  ![](/workshop2022/images/register%20PATRIC.png)
+  
+  ![](/workshop2022/images/register PATRIC.png)
+
 - Once you have an account set up, login with your credentials
 - Click on "Workspaces" on the top bar
 - On the right corner of the window, there is a button to create a new workspace
