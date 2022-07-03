@@ -13,7 +13,7 @@ Files to download:
 You can do these steps yourself if you like, 
 but we'll be skipping to the next step in the interest of time.
 
-[File preparation steps](/pages/data-viz-2-prep.md)
+[File preparation steps](/pages/data-viz-2-prep.html)
 
 # Relative abundance comparisons (Rstudio)
 
@@ -53,14 +53,17 @@ There are a bunch of very low abundance phyla that we dont care about.
 Let's get a list of the most abundant phyla and lump the rest into an 'other' category.
 
 ```r
-topPhyla = data %>% group_by(Phylum) %>% 
+topPhyla = data %>% 
+  group_by(Phylum) %>% 
   summarise(n=sum(Count)) %>%
   filter(n>50) %>% 
   pull(Phylum)
 
 phylumOtherCounts = phylumCounts
 phylumOtherCounts[!(phylumOtherCounts$Phylum %in% topPhyla),]$Phylum = 'Other'
-phylumOtherCounts = phylumOtherCounts %>% group_by(SampleID, Phylum) %>% summarise(n = sum(n))
+phylumOtherCounts = phylumOtherCounts %>% 
+  group_by(SampleID, Phylum) %>% 
+  summarise(n = sum(n))
 View(phylumOtherCounts)
 ```
 
@@ -86,7 +89,7 @@ ggplot(phylumOtherCounts, aes(x=SampleID, y=n, fill=Phylum)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
 
-![](/files/kraken/stackedBarPlot.png)
+![](/workshop2022/files/kraken/stackedBarPlot.png)
 
 A much better version of this is a bubble plot.
 Bubble plots are not only clearer, but allow an extra dimension of information as well.
@@ -135,6 +138,6 @@ ggplot(FamSums, aes(x=SampleID,y=Family,fill=Phylum,size=n)) +
   scale_size(range=c(0,10))
 ```
 
-![](/files/kraken/bubblePlot.png)
+![](/workshop2022/files/kraken/bubblePlot.png)
 
 # todo: PCA
