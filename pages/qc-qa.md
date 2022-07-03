@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /qc-qa
 ---
 
 # QC/QA Hands on tutorial
@@ -7,11 +8,15 @@ layout: default
 ## Data 
 Login
 - Using putty/mobaxterm 
-- Command line using `ssh username@115.146.84.253`
+- Command line using 
+	
+	`ssh username@115.146.84.253`
 
-List all the files, using command `ls`
+List all the files, using command 
+	
+	`ls`
   
-  A folder labelled "subsample"
+There should hopefully be a folder labelled "subsample"
 
 If you have only "subsample.tar" folder, this means you have to decompress this file. To do this run the command 
   
