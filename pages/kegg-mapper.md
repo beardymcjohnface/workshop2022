@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /kegg-mapper
 ---
 
 # KEGG mapper 

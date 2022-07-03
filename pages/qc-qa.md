@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /qc-qa
 ---
 
 # QC/QA Hands on tutorial
