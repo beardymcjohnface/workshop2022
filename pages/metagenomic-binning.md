@@ -35,7 +35,7 @@ You should see the progress of your upload.
 
 ## Confirm files were transferred to the server 
 
-Log in to the server using ssh command and enter your password when prompted.
+Log in to the server using `ssh` command and enter your password when prompted.
 
 ```
 ssh username@115.146.84.253
