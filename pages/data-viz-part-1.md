@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /data_viz_part_1
 ---
 
 # Data visualisation Part 1

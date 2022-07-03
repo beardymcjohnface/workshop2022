@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /data_viz_part_2_preparation
 ---
 
 # Preparation of Kraken output for Data visualation part 2
