@@ -9,11 +9,11 @@ Metagenomic binning is the process of separating sequences into bins representin
 
 In this session, we will use [MetaBAT](https://bitbucket.org/berkeleylab/metabat/src/master/), a popular programs for binning metagenomes to bin our contigs.
 
-## Before binning...
+# Before binning...
 
 We have already assembled the reads and provided the necessary assembly files to do binning. Let's download these files and transfer them to the server.
 
-### Download the files to your laptop
+## Download the files to your laptop
 
 Go to [https://cloudstor.aarnet.edu.au/plus/s/2oFEKQv68UZoFS9](https://cloudstor.aarnet.edu.au/plus/s/2oFEKQv68UZoFS9).
 
@@ -21,7 +21,7 @@ Select all the files and click on `Download`.
 
 The files will download to your laptop as `assembly_binning.tar`.
 
-### Transfer the files to the server provided for workshop
+## Transfer the files to the server provided for workshop
 
 On your laptop, use [WinSCP](https://winscp.net/eng/index.php) to transfer files.
 
@@ -33,9 +33,9 @@ scp assembly_binning.tar username@115.146.84.253:~/.
 
 You should see the progress of your upload.
 
-### Confirm files were transferred to the server 
+## Confirm files were transferred to the server 
 
-Log in to the server using ssh command and enter your password when prompted.
+Log in to the server using `ssh` command and enter your password when prompted.
 
 ```
 ssh username@115.146.84.253
@@ -45,7 +45,7 @@ OR use putty or MobaXterm to login instead.
 
 Once logged in, type the command `ls`. You should see `assembly_binning.tar` in the list.
 
-### Decompress `assembly_binning.tar`
+## Decompress `assembly_binning.tar`
 
 Type in the following command to extract the files from `assembly_binning.tar`.
 
@@ -75,7 +75,7 @@ You will see the following main files.
 Now we are set to bin our data using MetaBAT.
 
 
-## Binning using MetaBAT
+# Binning using MetaBAT
 
 MetaBAT does the profiling based on tetranucleotide frequencies in the samples. It counts the 4-mers, (i.e. `AAAA`, `AAAT`, `AAAG`, `AAAC`, `AATA`, `AATT`, …) in the sequences and uses those to suggest which samples should go together. The advantage of MetaBAT is that it will return your contigs for you.
 
@@ -83,7 +83,7 @@ MetaBAT also uses coverage information of the contigs which is calculated from B
 
 Since it takes a lot of time to generate the BAM files and create the depth file, we have already provided you with the depth file (`depth.txt`).
 
-### Generate `depth.txt` file for your own data
+## Generate `depth.txt` file for your own data
 
 If you need to create BAM files for your own data, you can use the following command to create BAM files for each  sample name listed in a file named `file.txt`.
 
@@ -115,7 +115,7 @@ NODE_9_length_46478_cov_5.442970	46478	20.1159	0.621849	0.710255	0.233876	0.2563
 
 The rows represent contigs and columns represent further information about the contigs and coverage in each sample.
 
-### Run MetaBAT2
+## Run MetaBAT2
 
 Let's bin our contigs using MetaBAT. We will use **MetaBAT2** which is the latest version of MetaBAT.
 
@@ -125,13 +125,13 @@ metabat2 -i contigs.fasta -a depth.txt -o metabat_bins/bin
 
 You can find the bins identified by MetaBAT2 in the folder `metabat_bins`.
 
-## Refining bins using GraphBin
+# Refining bins using GraphBin
 
 [GraphBin](https://github.com/metagentools/GraphBin) is a metagenomic contig bin refinement tool that makes use of the contig connectivity information from the assembly graph to refine bins and recover contigs discarded. 
 
 Once we have our bins from MetaBAT2, we can use GraphBin to refine the MetaBAT2 binning result.
 
-### Preparing the binning result
+## Preparing the binning result
 
 We have to format our binning result so that GraphBin can read the binning result. We have provided a script named [prep_result.py](https://github.com/beardymcjohnface/workshop2022/blob/gh-pages/scripts/prep_result.py) which you can find in the bundled data. You can run it as follows.
 
@@ -139,7 +139,7 @@ We have to format our binning result so that GraphBin can read the binning resul
 python prep_result.py --binned metabat_bins --output ./
 ```
 
-### Run GraphBin
+## Run GraphBin
 
 Since, we used metaSPAdes to assembly out data, we can run the metaSPAdes version of GraphBin as follows.
 

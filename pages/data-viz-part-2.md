@@ -240,3 +240,47 @@ This looks a bit more interesting.
 
 ![](/workshop2022/files/hecatomb/pca.png)
 
+
+# Visualising binning results on assemblies
+
+Let's visualise an existing binning result and the improved binning result from GraphBin for a sample dataset.
+
+Log in to the server using `ssh` command and enter your password when prompted.
+
+```
+ssh username@115.146.84.253
+```
+
+Assuming that you have the data from Day 1 of the workshop, go into the directory `assembly_binning/visualise` using the following command.
+
+```
+cd assembly_binning/visualise
+```
+
+You will see the following files when you enter the `ls` command.
+
+* `assembly_graph_with_scaffolds.gfa`
+* `contigs.fasta`
+* `contigs.paths`
+* `graphbin_output.csv`
+* `initial_contig_bins.csv`
+* `visualise_result.py`
+
+Now execute the following command.
+
+```
+python visualise_result.py --graph assembly_graph_with_scaffolds.gfa --paths contigs.paths --initial initial_contig_bins.csv --final graphbin_output.csv --output ./
+```
+
+You will see two files named `initial_binning_result.png` and `final_GraphBin_binning_result.png` have been generated for the two binning results.
+
+Now open a new command line or terminal on your laptop. Make sure you are not on the server. Let's transfer the two images we created to your laptop using the following commands. You will have to enter your password after each command.
+
+```
+scp username@115.146.84.253:~/assembly_binning/visualise/initial_binning_result.png ./
+```
+```
+scp username@115.146.84.253:~/assembly_binning/visualise/final_GraphBin_binning_result.png ./
+```
+
+Now open the files you downloaded from the file browser.
