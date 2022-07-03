@@ -5,6 +5,8 @@ permalink: /qc-qa
 
 # QC/QA Hands on tutorial
 
+[Link to presentation](https://flinders-my.sharepoint.com/:p:/g/personal/nala0006_flinders_edu_au/Edk3RVzYyiVIgn1VRONqsXUBc_OC-J_ZAQjAcI5nRwPrCg?e=557EOV)
+
 ## Data 
 Login
 - Using putty/mobaxterm 

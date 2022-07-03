@@ -5,14 +5,17 @@ permalink: /patric
 
 # Metagenome assembled genomes (MAG) Analysis
 
+[Link to presentation](https://flinders-my.sharepoint.com/:p:/g/personal/nala0006_flinders_edu_au/ES4Mk3jakl1GhygE67e_7GgBCj808SMLwzDpracec2xqxA?e=cRhPtc)
+
 Once the MAGs are generated, here are some downstream analysis that you can perform
 
 ## Step 1: Download the MAGs generated to laptop
-- Goto - [Click on this link to get MAGs](https://cloudstor.aarnet.edu.au/plus/s/2FJKmMoF8bOoGZd) \
+- Goto - [Click on this link to get MAGs](https://cloudstor.aarnet.edu.au/plus/s/2FJKmMoF8bOoGZd) 
 - Select "bin_20_seqs.fasta" and download 
 
 ## Step 2: Upload files to PATRIC
-PATRIC is web service available for microbial genome annotations, https://patricbrc.org
+[PATRIC](https://patricbrc.org) is web service available for microbial genome 
+annotations
 
 **Register**
 - First register for an account, if you dont already have one. Requires your name, and email. Should be quick
