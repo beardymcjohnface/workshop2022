@@ -10,7 +10,7 @@ In this session, we will use [MetaBAT](https://bitbucket.org/berkeleylab/metabat
 
 ## Before binning...
 
-We have already assembled the reads and provided the necessary assembly files to do binning. Let's download these files.
+We have already assembled the reads and provided the necessary assembly files to do binning. Let's download these files and transfer them to the server.
 
 ### Download the files to your laptop
 
@@ -22,7 +22,7 @@ The files will download to your laptop as `assembly_binning.tar`.
 
 ### Transfer the files to the server provided for workshop
 
-On your laptop, use WinSCP https://winscp.net/eng/index.php to transfer file
+On your laptop, use [WinSCP](https://winscp.net/eng/index.php) to transfer file
 
 If you are using command line, on your laptop 
 
@@ -38,7 +38,7 @@ Log in to the server using ssh command line
 ssh user@115.146.84.253
 ```
     
-OR use putty or Mobaterm to login instead.
+OR use putty or MobaXterm to login instead.
 
 Once logged in, type the command `ls`. You should see `assembly_binning.tar` in the list of files and folders.
 
@@ -60,13 +60,14 @@ cd assembly_binning
 ls
 ```
 
-You will see the following files.
+You will see the following main files.
 
 * `assembly_graph_with_scaffolds.gfa`
 * `contigs.fasta`
 * `contigs.paths`
 * `depth.txt`
 * `metabat2_contig_bins.csv`
+* `prep_result.py`
 
 Now we are set to bin our data using MetaBAT.
 
@@ -77,22 +78,26 @@ MetaBAT does the profiling based on tetranucleotide frequencies in the samples. 
 
 MetaBAT also uses coverage information of the contigs which is calculated from BAM files of every input sample. We need to map the individual reads to the contigs and get separate BAM files.
 
-You can use the following command to create BAM files for each input sample:
+Since it takes a lot of time to generate the BAM files and create the depth file, we have already provided you with the depth file (`depth.txt`).
+
+### Generate `depth.txt` file for your own data
+
+If you need to create BAM files for your own data, you can use the following command to create BAM files for each  sample name listed in a file named `file.txt`.
 
 ```
 mkdir bam_files
-for FASTA in *_good_out_R1.fastq; do minimap2 -ax sr contigs.fasta $f_good_out_R1.fastq $f_good_out_R2.fastq | samtools sort > bam_files/$f.bam done
+for FASTA in `cat file.txt`; do minimap2 -ax sr contigs.fasta $f_good_out_R1.fastq $f_good_out_R2.fastq | samtools sort > bam_files/$f.bam done
 ```
 
-Now we can generate a depth file from the BAM files using the following command:
+Now we can generate a depth file from the BAM files using the command `jgi_summarize_bam_contig_depths` provided from MetaBAT:
 
 ```
 jgi_summarize_bam_contig_depths --outputDepth bam_files/depth.txt *.bam
 ```
 
-Since it takes a lot of time to generate the BAM files and create the depth file, we have already provided you with the depth file (`depth.txt`) which can be found in https://cloudstor.aarnet.edu.au/plus/s/2oFEKQv68UZoFS9.
+### Run MetaBAT2
 
-Now we can run MetaBAT. We will use MetaBAT2 which is the latest version of of MetaBAT.
+Let's bin our contigs using MetaBAT. We will use **MetaBAT2** which is the latest version of MetaBAT.
 
 ```
 metabat2 -i contigs.fasta -a depth.txt -o metabat_bins/bin
@@ -108,13 +113,15 @@ Once we have our bins from MetaBAT2, we can use GraphBin to refine the MetaBAT2 
 
 ### Preparing the binning result
 
-We have to format our binning result so that GraphBin can read the binning result. We have provided a script named [prep_result.py](/scripts/prep_result.py) which you can download.
+We have to format our binning result so that GraphBin can read the binning result. We have provided a script named [prep_result.py](https://github.com/beardymcjohnface/workshop2022/blob/gh-pages/scripts/prep_result.py) which you can find in the bundled data. You can run it as follows.
 
 ```
 python prep_result.py --binned metabat_bins --output ./
 ```
 
-We can run the metaSPAdes version of GraphBin as follows.
+### Run GraphBin
+
+Since, we used metaSPAdes to assembly out data, we can run the metaSPAdes version of GraphBin as follows.
 
 ```
 graphbin --assembler spades --graph assembly_graph_with_scaffolds.gfa --contigs contigs.fasta --paths contigs.paths --binned initial_contig_bins.csv --output ./
