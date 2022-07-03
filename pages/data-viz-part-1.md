@@ -17,8 +17,8 @@ Here is a [handy Pandas cheat sheet](https://pandas.pydata.org/Pandas_Cheat_Shee
 
 Lets start with a superfocus run.
 Download the files:
-- superfocus output file [output_all_levels_and_function.tsv.gz](/files/output_all_levels_and_function.tsv.gz)
-- metadata file [metadata.tsv](/files/metadata.tsv)
+- superfocus output file [output_all_levels_and_function.tsv.gz](/workshop2022/files/output_all_levels_and_function.tsv.gz)
+- metadata file [metadata.tsv](/workshop2022/files/metadata.tsv)
 
 # Open RStudio
 

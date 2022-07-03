@@ -7,10 +7,10 @@ layout: default
 You don't have to do these steps, they're just a handy reference for messing with Kraken output in bash.
 
 Files I used:
-- [SRR1237780_kraken_output.txt](/files/kraken/SRR1237780_kraken_output.txt)
-- [SRR1237781_kraken_output.txt](/files/kraken/SRR1237781_kraken_output.txt)
-- [SRR1237782_kraken_output.txt](/files/kraken/SRR1237782_kraken_output.txt)
-- [SRR1237783_kraken_output.txt](/files/kraken/SRR1237783_kraken_output.txt)
+- [SRR1237780_kraken_output.txt](/workshop2022/files/kraken/SRR1237780_kraken_output.txt)
+- [SRR1237781_kraken_output.txt](/workshop2022/files/kraken/SRR1237781_kraken_output.txt)
+- [SRR1237782_kraken_output.txt](/workshop2022/files/kraken/SRR1237782_kraken_output.txt)
+- [SRR1237783_kraken_output.txt](/workshop2022/files/kraken/SRR1237783_kraken_output.txt)
 
 Concatonate and convert using taxonkit.
 
