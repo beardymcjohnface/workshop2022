@@ -8,7 +8,7 @@ permalink: /kegg-mapper
 KEGG is a database resource for understanding high level functions and 
 utilities in biological systems. 
 
-https://www.genome.jp/kegg/
+[Click here to go to KEGG website](https://www.genome.jp/kegg/)
 
 You can use this databse to identify pathway maps, biochemical reactions 
 in a cell. 
@@ -21,13 +21,12 @@ bin20.feature_protein.fasta" from PATRIC.
 This was the last step in PATRIC tutorial
 
 ## Annotating the proteins to get KEGG ID
-- Goto GhostKoala, https://www.kegg.jp/ghostkoala/
+- Goto [GhostKoala](https://www.kegg.jp/ghostkoala/)
 - Click on choose file, select "Bacteria workshop 
 bin20.feature_protein.fasta" 
 	- Select the option "genus_prokaryotes"
 	- add your email address 
 	- Select "request email confirmation"
-
 - Once the form is submitted, there will be an email sent to the email 
 address provided
 - Check for email from "noreply@scl.kyoto-u.ac.jp via kegg.jp", and clik 
@@ -56,5 +55,6 @@ download them
 	- This takes you to the list of the pathways in KEGG
 		- Can select for a specific pathway and have the genes found highlighted
 
-## Comparing genes in two genomes 
-https://blogs.iu.edu/ncgas/2019/02/21/visualizing-kegg-pathways/
+## Comparing genes in two genomes
+[NCGAS blog on KEGG analysis to compare 
+two genomes](https://blogs.iu.edu/ncgas/2019/02/21/visualizing-kegg-pathways/)
