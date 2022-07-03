@@ -27,9 +27,9 @@ You'll notice a few files ending with `.m8`. These are alignment files generated
 
 More importantly, you should notice the files, `output_subsystem_level_1.xls` `output_subsystem_level_1.xls` `output_subsystem_level_1.xls` . Each of these files provides details on the prevalence of each function belonging to the corresponding level. All three levels are contained in the file `output_all_levels_and_function.xls`
 
-To look at the level 1 output run the commands 
+To look at the level 1 output run the command
 ```
-less output_subsystem_level_1.xls  
+column -t -s $'\t' -n string output_subsystem_level_1.xls  | less
 ```
 
 Here the first four columns correspond to the normalised read counts of each sample, and the second four columns contain the percent abundance of each function. 
