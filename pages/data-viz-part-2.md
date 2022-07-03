@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /data_viz_part_2
 ---
 
 # Data visualisation Part 2
@@ -13,7 +14,7 @@ Files to download:
 You can do these steps yourself if you like, 
 but we'll be skipping to the next step in the interest of time.
 
-[File preparation steps](/workshop2022/pages/data-viz-2-prep.md)
+[File preparation steps](/workshop2022/data_viz_part_2_preparation)
 
 # Relative abundance comparisons (Rstudio)
 
