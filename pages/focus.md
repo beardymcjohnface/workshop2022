@@ -16,7 +16,7 @@ cp prinseq/*good_out_R1.fastq good_out_R1
 ## Running FOCUS 
 
 Lucky for us, FOCUS has already been downloaded and configured with a database. This means are ready to run FOCUS!\
-(If you need to install SUPER-FOCUS in the future you should refer to the [FOCUS github](https://github.com/metageni/FOCUS) for instructions)
+(If you need to install FOCUS in the future you should refer to the [FOCUS github](https://github.com/metageni/FOCUS) for instructions)
 
 Run the command 
 ```
@@ -39,7 +39,7 @@ To look at the output for the genus level, run the command
 column -t -s $'\t' -n string output_Genus_tabular.xls | less
 ```
 
-You will notice that this file contains four hierarchical levels, one for each sample. The values in the table correspond to the relative abundance of each taxa. 
+You will notice that this file contains four columns, one for each sample. The values in the table correspond to the relative abundance of each taxa. 
 
 When you are done looking at the output, press the letter 'q' on your keyboard. 
 
