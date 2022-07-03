@@ -15,7 +15,7 @@ PATRIC is web service available for microbial genome annotations, https://patric
 
 - First register for an account, if you dont already have one. Requires your name, and email. Should be quick
   
-  ![](/workshop2022/images/register PATRIC.png)
+  ![](/workshop2022/images/register-PATRIC.png)
 
 - Once you have an account set up, login with your credentials
 - Click on "Workspaces" on the top bar
@@ -47,6 +47,12 @@ PATRIC is web service available for microbial genome annotations, https://patric
   - Click on Annotate
 
 This may take a while, so have to wait 
+
+## Downloading the protein sequences
+- The in the annotation directory
+- Click on "Bacteria workshop bin20.feature_protein.fasta", and click on 
+the option "Download" on the right bar
+
 
 ## The rest of the steps will shown as demo 
 
