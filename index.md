@@ -4,6 +4,8 @@ Welcome to the FAME metagenomics workshop for 2022, sponsored by SAGC!
 Follow the links in the schedule table to access the workshop material for that session.
 Click 'Home' to return here.
 
+[Download the manal](/files/SAGC_2022_Metagenomics_Guide.pdf)
+
 ### Schedule
 
 #### 04/07/2022
@@ -41,3 +43,17 @@ Time |Topic | Presenter
 1530-1645 | [Hands-on data viz part 2](/pages/data-viz-part-2.md) | Michael Roach
 1645-1700 | Wrap up and summary | Rob Edwards
 
+#### 06/07/2022
+
+Time |Topic | Presenter 
+-----|-----|-----
+0900-0930 | Recap of Day 1 and 2 | Rob Edwards
+0930-1000 | Introduction to workflows | Nathan Watson-Haigh
+1000-1030 | Snakemake | Nathan Watson-Haigh
+030-1100 | Morning coffee | 
+1100-1200 | Snakemake hands on | Nathan Watson-Haigh
+1230-1330 | Lunch
+1330-1400 | SAGC | Sen Wang
+1400-1500 | Travel to Adelaide Tree Climb
+1500-1630 | Adelaide Tree Climb
+1700 | Drinks at the Goodwood Park HotelSAGC
