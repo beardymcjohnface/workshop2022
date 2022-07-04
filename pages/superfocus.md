@@ -60,5 +60,8 @@ Next we can generate our krona plot by running the command
 ktImportText superfocus_out_krona.tsv -o superfocusKronaPlot.html
 ```
 Next download the Krona html file to your desktop using WinSCP. You can open this html file in your favourite browser to reveal a plot of the distribution of functions in the samples. You can zoom in and zoom out to see the different levels of annotations. 
+```
+scp -r grig0076@115.146.84.253:/home/grig0076/superfocus_out/superfocus_out_krona.tsv . 
+```
 
 Congratulations on making it to the end of the tutorial! I hope you enjoyed it 
