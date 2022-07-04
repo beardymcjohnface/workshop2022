@@ -28,8 +28,8 @@ Click 'Home' to return here.
 
 Time |Topic | Presenter 
 -----|-----|-----
-0900-0930 | Metagenome-assembled genome annotation | Susie Grigson 
-0930-1000 | [Prokka annotating MAG hands-on](/pages/patric.md) | Bhavya Papudeshi/Susie Grigson
+0900-0930 | Recap  | Everyone 
+0930-1000 | [MAG annotation using PATRIC](/pages/patric.md) | Bhavya Papudeshi/Susie Grigson
 1000-1030 | [KEGG mapper](/pages/kegg-mapper.md) | Bhavya Papudeshi
 1030-1100 | Morning coffee |
 1100-1200 | AMR and WW | EDo
