@@ -245,16 +245,54 @@ This looks a bit more interesting.
 
 Let's visualise an existing binning result and the improved binning result from GraphBin for a sample dataset.
 
+## Download the files to your laptop
+
+Go to [https://cloudstor.aarnet.edu.au/plus/s/PEpz3m2DQdZq04W](https://cloudstor.aarnet.edu.au/plus/s/PEpz3m2DQdZq04W).
+
+Select all the files and click on `Download`.
+
+The files will download to your laptop as `visualise.tar`.
+
+## Transfer the files to the server provided for workshop
+
+On your laptop, use [WinSCP](https://winscp.net/eng/index.php) to transfer files.
+
+If you are using the command line on your laptop, enter the following command and your password when prompted.
+
+```
+scp visualise.tar username@115.146.84.253:~/.
+```
+
+You should see the progress of your upload.
+
+## Confirm files were transferred to the server 
+
 Log in to the server using `ssh` command and enter your password when prompted.
 
 ```
 ssh username@115.146.84.253
 ```
+    
+OR use putty or MobaXterm to login instead.
 
-Assuming that you have the data from Day 1 of the workshop, go into the directory `assembly_binning/visualise` using the following command.
+Once logged in, type the command `ls`. You should see `visualise.tar` in the list.
+
+## Decompress `visualise.tar`
+
+Type in the following command to extract the files from `visualise.tar`.
 
 ```
-cd assembly_binning/visualise
+tar -xvf visualise.tar
+ls
+```
+  
+If you type the command `ls`, you will see the folder `visualise`. 
+
+Go into the folder `visualise` and list the content using the following command.
+
+```
+cd visualise
+ls
 ```
 
 You will see the following files when you enter the `ls` command.
