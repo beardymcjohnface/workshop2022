@@ -315,14 +315,18 @@ You will see two files named `initial_binning_result.png` and `final_GraphBin_bi
 Now open a new command line or terminal on your laptop. Make sure you are not on the server. Let's transfer the two images we created to your laptop using the following commands. You will have to enter your password after each command.
 
 ```
-scp username@115.146.84.253:~/assembly_binning/visualise/initial_binning_result.png ./
+scp username@115.146.84.253:~/visualise/initial_binning_result.png ./
 ```
 ```
-scp username@115.146.84.253:~/assembly_binning/visualise/final_GraphBin_binning_result.png ./
+scp username@115.146.84.253:~/visualise/final_GraphBin_binning_result.png ./
 ```
 
 Now open the files you downloaded from the file browser.
 
+Initial binning result - `initial_binning_result.png`
+
 ![](/workshop2022/files/graph_viz/initial_binning_result.png)
+
+GraphBin result - `final_GraphBin_binning_result.png`
 
 ![](/workshop2022/files/graph_viz/final_GraphBin_binning_result.png)
