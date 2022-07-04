@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /focus
+---
+
 # FOCUS 
 FOCUS (Find Organisms by Composition Usage) is a computational tool which allows us to determine the taxa present in a metagenomic sequencing using an alignment free approach. 
 

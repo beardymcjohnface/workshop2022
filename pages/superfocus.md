@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /superfocus
+---
+
 # SUPER-FOCUS 
 SUPER-FOCUS is a tool which allows us to determine the functions present in metagenomic sequencing data. SUPER-FOCUS makes use of Subsystems, a functional classification system which contains three hierarchical levels. 
 

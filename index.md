@@ -17,10 +17,10 @@ Click 'Home' to return here.
 | 1000-1030 | [QC/QA hands-on](/pages/qc-qa.md) | Bhavya Papudeshi |
 | 1030-1100 | Morning coffee | |
 | 1100-1130 | Introduction to metagenomics | Michael Doane |
-| 1130-1230 | [Kraken2 hands-on]() | Michael Doane |
+| 1130-1230 | [FOCUS hands-on](/pages/focus.md) | Michael Doane |
 | 1230-1330 | Lunch | |
 | 1330-1400 | Functional analysis | Susie Grigson/Michael Doane |
-| 1400-1430 | [Super-Focus hands-on]() | Susie Grigson/Michael Doane |
+| 1400-1430 | [Super-Focus hands-on](/pages/superfocus.md) | Susie Grigson/Michael Doane |
 | 1430-1500 | Sequence Assembly and Evaluation with QUAST | Vijini Mallawaarachchi/Bhavya Papudeshi |
 | 1500-1530 | Afternoon tea | |
 | 1530-1600 | Metagenomic binning | Vijini Mallawaarachchi |
