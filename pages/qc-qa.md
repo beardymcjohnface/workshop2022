@@ -7,7 +7,7 @@ permalink: /qc-qa
 
 [Link to presentation](https://flinders-my.sharepoint.com/:p:/g/personal/nala0006_flinders_edu_au/Edk3RVzYyiVIgn1VRONqsXUBc_OC-J_ZAQjAcI5nRwPrCg?e=557EOV)
 
-## Data 
+## Data
 Login
 - Using putty/mobaxterm 
 - Command line using 
@@ -23,6 +23,8 @@ There should hopefully be a folder labelled "subsample"
 If you have only "subsample.tar" folder, this means you have to decompress this file. To do this run the command 
   
   `tar -xvf subsample.tar`
+
+__[If you need to download the files, follow the instructions here](qc-qa-download.md)__
 
 List out the files in the subsample folder, 
 

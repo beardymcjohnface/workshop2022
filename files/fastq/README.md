@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /qc-qa-download
+---
+
 ## Download the fastq files for workshop
 
 Goto https://cloudstor.aarnet.edu.au/plus/s/ZAwa5VsRZYjqpai
