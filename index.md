@@ -4,7 +4,7 @@ Welcome to the FAME metagenomics workshop for 2022, sponsored by SAGC!
 Follow the links in the schedule table to access the workshop material for that session.
 Click 'Home' to return here.
 
-[Download the manal](/files/SAGC_2022_Metagenomics_Guide.pdf)
+[Download the manual](/files/SAGC_2022_Metagenomics_Guide.pdf)
 
 ### Schedule
 
