@@ -66,7 +66,13 @@ Next we can generate our krona plot by running the command
 ktImportText focus_out_krona.tsv -o focusKronaPlot.html
 ```
 
-Next download the Krona html file to your desktop using WinSCP. You can open this html file in your favourite browser to reveal a plot of the taxonomic composition of the samples. You can zoom in and zoom out to see the different levels of annotations. 
+Next download the Krona html file to your desktop using WinSCP. 
+```
+scp -r grig0076@115.146.84.253:/home/grig0076/focus_out/focus_out_krona.tsv .
+```
+
+scp -r grig0076@115.146.84.253:/home/grig0076/focus_out/focus_out_krona.tsv .
+You can open this html file in your favourite browser to reveal a plot of the taxonomic composition of the samples. You can zoom in and zoom out to see the different levels of annotations. 
 
 Congratulations on making it to the end of the tutorial! Stay tuned for the next tutorial. 
 
