@@ -322,3 +322,7 @@ scp username@115.146.84.253:~/assembly_binning/visualise/final_GraphBin_binning_
 ```
 
 Now open the files you downloaded from the file browser.
+
+![](/workshop2022/files/graph_viz/initial_binning_result.png)
+
+![](/workshop2022/files/graph_viz/final_GraphBin_binning_result.png)
