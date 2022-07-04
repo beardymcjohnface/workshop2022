@@ -24,7 +24,7 @@ If you have only "subsample.tar" folder, this means you have to decompress this 
   
   `tar -xvf subsample.tar`
 
-### [If you need to download the files, follow the instructions here](/workshop2022/files/fastq/README.md)
+### [If you need to download the files, follow the instructions here](/workshop2022/qc-qa-download)
 
 List out the files in the subsample folder, 
 
