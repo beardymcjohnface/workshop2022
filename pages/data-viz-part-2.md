@@ -245,16 +245,54 @@ This looks a bit more interesting.
 
 Let's visualise an existing binning result and the improved binning result from GraphBin for a sample dataset.
 
+## Download the files to your laptop
+
+Go to [https://cloudstor.aarnet.edu.au/plus/s/PEpz3m2DQdZq04W](https://cloudstor.aarnet.edu.au/plus/s/PEpz3m2DQdZq04W).
+
+Select all the files and click on `Download`.
+
+The files will download to your laptop as `visualise.tar`.
+
+## Transfer the files to the server provided for workshop
+
+On your laptop, use [WinSCP](https://winscp.net/eng/index.php) to transfer files.
+
+If you are using the command line on your laptop, enter the following command and your password when prompted.
+
+```
+scp visualise.tar username@115.146.84.253:~/.
+```
+
+You should see the progress of your upload.
+
+## Confirm files were transferred to the server 
+
 Log in to the server using `ssh` command and enter your password when prompted.
 
 ```
 ssh username@115.146.84.253
 ```
+    
+OR use putty or MobaXterm to login instead.
 
-Assuming that you have the data from Day 1 of the workshop, go into the directory `assembly_binning/visualise` using the following command.
+Once logged in, type the command `ls`. You should see `visualise.tar` in the list.
+
+## Decompress `visualise.tar`
+
+Type in the following command to extract the files from `visualise.tar`.
 
 ```
-cd assembly_binning/visualise
+tar -xvf visualise.tar
+ls
+```
+  
+If you type the command `ls`, you will see the folder `visualise`. 
+
+Go into the folder `visualise` and list the content using the following command.
+
+```
+cd visualise
+ls
 ```
 
 You will see the following files when you enter the `ls` command.
@@ -277,10 +315,18 @@ You will see two files named `initial_binning_result.png` and `final_GraphBin_bi
 Now open a new command line or terminal on your laptop. Make sure you are not on the server. Let's transfer the two images we created to your laptop using the following commands. You will have to enter your password after each command.
 
 ```
-scp username@115.146.84.253:~/assembly_binning/visualise/initial_binning_result.png ./
+scp username@115.146.84.253:~/visualise/initial_binning_result.png ./
 ```
 ```
-scp username@115.146.84.253:~/assembly_binning/visualise/final_GraphBin_binning_result.png ./
+scp username@115.146.84.253:~/visualise/final_GraphBin_binning_result.png ./
 ```
 
 Now open the files you downloaded from the file browser.
+
+Initial binning result - `initial_binning_result.png`
+
+![](/workshop2022/files/graph_viz/initial_binning_result.png)
+
+GraphBin result - `final_GraphBin_binning_result.png`
+
+![](/workshop2022/files/graph_viz/final_GraphBin_binning_result.png)
