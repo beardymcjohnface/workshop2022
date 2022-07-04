@@ -34,7 +34,7 @@ Time |Topic | Presenter
 0930-1000 | [Prokka annotating MAG hands-on](/pages/patric.md) | Bhavya Papudeshi/Susie Grigson
 1000-1030 | [KEGG mapper](/pages/kegg-mapper.md) | Bhavya Papudeshi
 1030-1100 | Morning coffee |
-1100-1200 | AMR and WW | EDo
+1100-1200 | AMR and WW | Erica Donner
 1200-1230 | [AMR finding]() | Michael Roach
 1230-1330 | Lunch | 
 1330-1400 | Data visualization in R and Python | Michael Roach
