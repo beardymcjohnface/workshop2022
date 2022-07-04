@@ -16,7 +16,7 @@ Click 'Home' to return here.
 | 0900-1000 | Introduction to computing | Bhavya Papudeshi |
 | 1000-1030 | [QC/QA hands-on](/pages/qc-qa.md) | Bhavya Papudeshi |
 | 1030-1100 | Morning coffee | |
-| 1100-1130 | Introduction to metagenomics | Michael Doane |
+| 1100-1130 | Introduction to metagenomics [(slides)](/workshop2022/files/SAGC_metagenomics_July2022.pptx) | Michael Doane |
 | 1130-1230 | [FOCUS hands-on](/pages/focus.md) | Michael Doane |
 | 1230-1330 | Lunch | |
 | 1330-1400 | Functional analysis | Susie Grigson/Michael Doane |
