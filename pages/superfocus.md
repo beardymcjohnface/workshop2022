@@ -62,3 +62,5 @@ ktImportText superfocus_out_krona.tsv -o superfocusKronaPlot.html
 Next download the Krona html file to your desktop using WinSCP. You can open this html file in your favourite browser to reveal a plot of the distribution of functions in the samples. You can zoom in and zoom out to see the different levels of annotations. 
 
 Congratulations on making it to the end of the tutorial! I hope you enjoyed it 
+
+__[Feeling lazy? Here's the final product!](/workshop2022/files/superfocusKronaPlot.html)__

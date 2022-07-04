@@ -70,3 +70,4 @@ Next download the Krona html file to your desktop using WinSCP. You can open thi
 
 Congratulations on making it to the end of the tutorial! Stay tuned for the next tutorial. 
 
+__[Feeling lazy? Here's the final product!](/workshop2022/files/focusKronaPlot.html)__
