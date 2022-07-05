@@ -35,7 +35,7 @@ Time |Topic | Presenter
 1000-1030 | [KEGG mapper](/pages/kegg-mapper.md) | Bhavya Papudeshi
 1030-1100 | Morning coffee |
 1100-1200 | AMR and WW | Erica Donner
-1200-1230 | [AMR finding]() | Michael Roach
+1200-1230 | [AMR finding](/pages/amr-finder.md) | Michael Roach
 1230-1330 | Lunch | 
 1330-1400 | Data visualization in R and Python | Michael Roach
 1400-1500 | [Hands-on data viz part 1](/pages/data-viz-part-1.md) | Michael Roach
