@@ -304,6 +304,14 @@ You will see the following files when you enter the `ls` command.
 * `initial_contig_bins.csv`
 * `visualise_result.py`
 
+## Visualise the results
+
+If you want to run the script on your laptop, make sure you have the following python packages installed.
+
+* `csv`
+* `python-igraph`
+* `cairocffi`
+
 Now execute the following command.
 
 ```
