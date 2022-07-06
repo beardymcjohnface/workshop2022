@@ -1,4 +1,4 @@
-## FAME Metagenomics Workshop for 2022
+# FAME Metagenomics Workshop for 2022
 
 Welcome to the FAME metagenomics workshop for 2022, sponsored by SAGC!
 Follow the links in the schedule table to access the workshop material for that session.
@@ -6,9 +6,9 @@ Click 'Home' to return here.
 
 [Download the manual](/files/SAGC_2022_Metagenomics_Guide.pdf)
 
-### Schedule
+## Schedule
 
-#### 04/07/2022
+### 04/07/2022
 
 | Time |Topic | Presenter |
 |-----|-----|-----|
@@ -26,7 +26,7 @@ Click 'Home' to return here.
 | 1530-1600 | Metagenomic binning [(slides)](/workshop2022/files/Metagenomic_binning.pptx) | Vijini Mallawaarachchi |
 | 1600-1700 | [Binning hands-on](/pages/metagenomic-binning.md) | Vijini Mallawaarachchi |
 
-#### 05/07/2022
+### 05/07/2022
 
 Time |Topic | Presenter 
 -----|-----|-----
@@ -43,7 +43,11 @@ Time |Topic | Presenter
 1530-1645 | [Hands-on data viz part 2](/pages/data-viz-part-2.md) | Michael Roach
 1645-1700 | Wrap up and summary | Rob Edwards
 
-#### 06/07/2022
+### 06/07/2022
+
+#### [Download the Snakemake Tutorial slides](/files/Snakemake.ppsx)
+
+#### [Download the Snakemake Tutorial Documentation](/files/trainee_handout.pdf)
 
 Time |Topic | Presenter 
 -----|-----|-----
